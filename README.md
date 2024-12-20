@@ -19,6 +19,30 @@ A modern web application that converts various document formats to Markdown. Bui
 
 ## Installation
 
+### Option 1: Using Docker (Recommended)
+
+1. Install Docker and Docker Compose on your system
+
+2. Clone the repository:
+```bash
+git clone https://github.com/imehr/markitdown-ui.git
+cd markitdown-ui
+```
+
+3. Build and run with Docker Compose:
+```bash
+docker-compose up -d
+```
+
+4. Open your web browser and navigate to http://localhost:8501
+
+To stop the container:
+```bash
+docker-compose down
+```
+
+### Option 2: Manual Installation
+
 1. Clone the repository:
 ```bash
 git clone https://github.com/imehr/markitdown-ui.git
@@ -38,6 +62,10 @@ pip install -r requirements.txt
 
 ## Usage
 
+### Using Docker
+The application will be automatically available at http://localhost:8501 after running `docker-compose up -d`
+
+### Manual Run
 1. Start the Streamlit app:
 ```bash
 streamlit run app.py
@@ -56,6 +84,14 @@ streamlit run app.py
 - python-pptx
 - nbconvert
 - beautifulsoup4
+
+## Docker Support
+The application includes Docker support for easy deployment:
+- Multi-stage build for optimized image size
+- Volume mounting for persistent data
+- Health checks for container monitoring
+- Automatic restart on failure
+- Environment variable configuration
 
 ## Author
 - Mehran Mozaffari
