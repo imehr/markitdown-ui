@@ -1,50 +1,61 @@
 # MarkItDown UI
 
-A simple web interface for converting various file formats to Markdown using Microsoft's MarkItDown library.
+A modern web application that converts various document formats to Markdown. Built with Streamlit for a clean, user-friendly interface.
 
 ## Features
 
-- Convert various file formats to Markdown:
-  - Documents (PDF, Word, PowerPoint, Excel)
-  - Code (Jupyter notebooks)
-  - Web Pages (HTML, TXT)
-  - Archives (ZIP)
-- Modern, clean user interface
-- Easy file upload and conversion
+- Convert multiple file formats to Markdown:
+  - PDF documents
+  - Word documents (.docx)
+  - PowerPoint presentations (.ppt, .pptx)
+  - Jupyter Notebooks (.ipynb)
+  - HTML files
+  - Text files
+  - ZIP archives containing supported files
+- Clean and intuitive user interface
+- Multi-file upload support
+- Improved text formatting and spacing
+- Download converted Markdown files
 
 ## Installation
 
-1. Clone this repository:
+1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/markitdown-ui.git
+git clone https://github.com/imehr/markitdown-ui.git
 cd markitdown-ui
 ```
 
-2. Install the requirements:
+2. Create a virtual environment and activate it:
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows, use: .venv\Scripts\activate
+```
+
+3. Install the required packages:
 ```bash
 pip install -r requirements.txt
 ```
 
 ## Usage
 
-1. Run the application:
+1. Start the Streamlit app:
 ```bash
-python app.py
+streamlit run app.py
 ```
 
-2. Open your web browser and navigate to the URL shown in the terminal (typically http://localhost:7860)
+2. Open your web browser and navigate to the provided URL (typically http://localhost:8501)
 
-3. Upload a file using the file upload button
+3. Upload your documents and click "Convert to Markdown"
 
-4. Click "Convert" to convert your file to Markdown
-
-5. The converted Markdown will appear in the output section
-
-## Requirements
+## Dependencies
 
 - Python 3.7+
-- Gradio
-- MarkItDown
+- Streamlit
+- PyPDF2
+- python-docx
+- python-pptx
+- nbconvert
+- beautifulsoup4
 
 ## Author
 - Mehran Mozaffari
