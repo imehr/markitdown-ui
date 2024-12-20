@@ -34,7 +34,7 @@ cd markitdown-ui
 docker-compose up -d
 ```
 
-4. Open your web browser and navigate to http://localhost:8501
+4. Open your web browser and navigate to http://localhost:8502
 
 To stop the container:
 ```bash
@@ -63,7 +63,7 @@ pip install -r requirements.txt
 ## Usage
 
 ### Using Docker
-The application will be automatically available at http://localhost:8501 after running `docker-compose up -d`
+The application will be automatically available at http://localhost:8502 after running `docker-compose up -d`
 
 ### Manual Run
 1. Start the Streamlit app:
@@ -71,7 +71,7 @@ The application will be automatically available at http://localhost:8501 after r
 streamlit run app.py
 ```
 
-2. Open your web browser and navigate to the provided URL (typically http://localhost:8501)
+2. Open your web browser and navigate to the provided URL (typically http://localhost:8502)
 
 3. Upload your documents and click "Convert to Markdown"
 

@@ -5,7 +5,7 @@ services:
     build: .
     container_name: markitdown-ui
     ports:
-      - "8501:8501"
+      - "8502:8501"
     volumes:
       - .:/app
     environment:
